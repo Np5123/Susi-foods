@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susi Foods</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Susi Foods Logo" style="width:100px;height:auto;display:block;margin:0 auto 1rem auto;">
+        <h1>Susi Foods</h1>
+        <p>Delicious & Healthy Ladoos for Every Occasion</p>
+    </header>
+    <main>
+        <div class="section-bg"></div>
+        <section id="about">
+            <h2>Welcome to Susi Foods!</h2>
+            <p>We offer a variety of healthy, homemade ladoos made with love and the finest ingredients. Perfect for gifting, celebrations, or a healthy snack!</p>
+        </section>
+        <section id="varieties">
+            <h2>Our Ladoo Varieties</h2>
+            <div class="ladoo-list">
+                <div class="ladoo-item">
+                    <img src="images/dryfruits.png" alt="Dry Fruits Ladoo">
+                    <h3>Dry Fruits Ladoo</h3>
+                    <p>Loaded with premium dry fruits, natural sweetness, and no added sugar. Perfect for energy and taste!</p>
+                </div>
+                <div class="ladoo-item">
+                    <img src="images/milletsladoo.jpg" alt="Millet Ladoo">
+                    <h3>Millet Ladoo</h3>
+                    <p>Nutritious ladoos made from assorted millets, jaggery, and ghee for a wholesome treat.</p>
+                </div>
+                <div class="ladoo-item">
+                    <img src="images/ragiladoo.jpg" alt="Ragi Ladoo">
+                    <h3>Ragi Ladoo</h3>
+                    <p>Rich in calcium and fiber, made with ragi flour, jaggery, and ghee for a healthy snack.</p>
+                </div>
+                <div class="ladoo-item">
+                    <img src="images/besanladoo.jpg" alt="Besan Ladoo">
+                    <h3>Besan Ladoo</h3>
+                    <p>Classic ladoos made from roasted gram flour, ghee, and jaggery, loved by all ages.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact / Order</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message / Order Details:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="formMessage"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Susi Foods. All rights reserved.</p>
+    </footer>
+    <!-- Modal for Thank You message -->
+    <div id="thankYouModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Thank You!</h2>
+            <p>Thank you for reaching out! We will contact you soon.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
